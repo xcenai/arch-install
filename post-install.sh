@@ -1,3 +1,4 @@
+echo "root:orion" | chpasswd
 ln -sf /usr/share/zoneinfo/America/St_Lucia /etc/localtime
 hwclock --systohc
 sed -i 's/#en_US.UTF-8/en_US.UTF-8/' /etc/locale.gen
