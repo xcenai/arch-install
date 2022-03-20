@@ -6,3 +6,4 @@ echo 'LANG=en_US.UTF-8' > /etc/locale.conf
 echo 'arch' > /etc/hostname
 pacman --noconfirm -S amd-ucode grub
 grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
